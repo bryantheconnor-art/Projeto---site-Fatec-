@@ -1,0 +1,61 @@
+
+/* Define o tamanho e o layout geral da página. */
+body {
+    min-height: 100vh; /* Garante pelo menos a altura total da janela. */
+    margin: 0; /* Remove a margem padrão do navegador. */
+    display: flex; /* Ativa o layout flexível. */
+    flex-direction: column; /* Organiza os elementos da página na vertical. */
+}
+
+/* Estiliza a barra de navegação. */
+nav {
+    min-height: 50px; /* Define a altura mínima da barra. */
+    background-color: #0005; /* Aplica um fundo preto semitransparente. */
+    display: flex; /* Ativa o layout flexível na navegação. */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro. */
+    gap: 20px; /* Define o espaço entre os elementos filhos. */
+}
+
+/* Organiza os links da navegação em uma linha. */
+nav ul {
+    display: flex; /* Coloca os itens da lista lado a lado. */
+    gap: 20px; /* Define o espaço entre os itens. */
+    margin: 0; /* Remove a margem padrão da lista. */
+    padding: 0 20px; /* Remove o espaço vertical e adiciona espaço horizontal. */
+    list-style: none; /* Remove as bolinhas da lista. */
+}
+
+/* Define a cor dos links de navegação. */
+nav a {
+    color: inherit; /* Usa a cor herdada do elemento pai. */
+}
+
+/* Estiliza a área principal preenchida pelo JavaScript. */
+#root {
+    flex: 1; /* Ocupa o espaço restante da página. */
+    background-color: #000; /* Define o fundo como preto. */
+    color: #fff; /* Define a cor do texto como branco. */
+    display: flex; /* Ativa o layout flexível para o conteúdo. */
+    flex-direction: column; /* Organiza os títulos na vertical. */
+    justify-content: center; /* Centraliza o conteúdo na vertical. */
+    align-items: center; /* Centraliza o conteúdo na horizontal. */
+    padding: 24px; /* Adiciona espaço interno ao redor do conteúdo. */
+    text-align: center; /* Centraliza o texto. */
+    font-size: 30px; /* Define o tamanho base do texto. */
+}
+
+/* Ajusta o tamanho e a leitura dos parágrafos na área principal. */
+#root p {
+    max-width: 850px; /* Evita que as linhas fiquem largas demais. */
+    font-size: 18px; /* Mantém o texto menor que os títulos. */
+    line-height: 1.6; /* Melhora a leitura entre as linhas. */
+}
+
+/* Formata a lista de opções na página de cursos. */
+#root ul {
+    margin: 0; /* Remove a margem padrão da lista. */
+    padding-left: 28px; /* Mantém espaço para os marcadores da lista. */
+    text-align: left; /* Alinha os nomes dos cursos à esquerda. */
+    font-size: 20px; /* Define um tamanho confortável para a leitura. */
+    line-height: 1.8; /* Separa visualmente as opções. */
+}
